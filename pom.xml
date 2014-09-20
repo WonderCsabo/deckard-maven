@@ -9,6 +9,10 @@
     <packaging>apk</packaging>
     <name>Deckard</name>
     <description>Who is the replicant here?</description>
+    
+    <properties>
+    	<powermock.version>1.5.5</powermock.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -32,6 +36,30 @@
             <scope>provided</scope>
         </dependency>
 
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4-rule</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-mockito</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-classloading-xstream</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
     </dependencies>
 
     <build>
